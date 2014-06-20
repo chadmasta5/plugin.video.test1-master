@@ -16,7 +16,8 @@ def build_url(query):
 mode = args.get('mode', None)
 
 if mode is None:
-    url = build_url({'mode': 'folder', 'foldername': 'test1'})
+    foldername = args['trial'][0]
+    url = 'http://w325307.blob2.ge.tt/streams/9kGjGDl1/tutorial.mp4'
     li = xbmcgui.ListItem('asdf', iconImage='DefaultFolder.png')
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url,
                                 listitem=li, isFolder=True)
